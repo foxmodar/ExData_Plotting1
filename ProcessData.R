@@ -1,4 +1,4 @@
-# Exploratory Data Analysis - Week_1
+# Exploratory Data Analysis - Week_1 - Johns Hopkins Data Science
 
 if(!file.exists("./data")){ dir.create("./data")}
   

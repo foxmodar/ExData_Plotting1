@@ -1,5 +1,5 @@
 
-#-------------------------------------------Plot_4 : source("ProcessData.R") before you run the following code ----------------------------------
+#-------------------------------------------Plot_4 : source("ProcessData.R") before you run the following code ------------------------------------
 setwd("figure/")
 png("plot4.png", width = 480 , height = 480)
 

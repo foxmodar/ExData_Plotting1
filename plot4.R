@@ -1,6 +1,6 @@
 
 #-------------------------------------------Plot_4 : source("ProcessData.R") before you run the following code ----------------------------------
-
+setwd("figure/")
 png("plot4.png", width = 480 , height = 480)
 
 par(mfrow = c(2,2))
@@ -14,6 +14,8 @@ plotC <- plot(x = Feb_ePowerCons$DateTime, y = Feb_ePowerCons$Sub_metering_1, ty
         lines(x = Feb_ePowerCons$DateTime, y = Feb_ePowerCons$Sub_metering_3, col = "blue")
 
 plotD <- plot(x = Feb_ePowerCons$DateTime, y = Feb_ePowerCons$Global_reactive_power, type="l", xlab = "datatime", ylab = "Global_reactive_power")
+
+setwd("..")
 
 dev.off()
 

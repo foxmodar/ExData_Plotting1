@@ -19,11 +19,13 @@ if(!file.exists("./data")){ dir.create("./data")}
   #add new variable combine data & time as POSIXct
   Feb_ePowerCons$DateTime <- as.POSIXct(paste(Feb_ePowerCons$Date, Feb_ePowerCons$Time, format = "%d/%m/%Y %H:%M:%S"))
   
-  
+  setwd("figure/")
   
   source("plot1.R")
   source("plot2.R")
   source("plot3.R")
   source("plot4.R")
+  
+  setwd("..")
   
   dev.off()
